@@ -1,0 +1,203 @@
+# Yomos 2025  
+## GitHub Workshop  
+**How to Connect VS Code with GitHub**
+
+---
+
+## Overview
+
+This guide walks you through connecting Visual Studio Code (VS Code) with GitHub, working with branches, committing changes, creating pull requests, and collaborating with others on repositories.
+
+---
+
+## 1. Create Your Own Repository
+
+1. Open **VS Code** and your project folder.  
+2. Click the **Source Control** icon on the sidebar.  
+3. Click **Initialize Repository**.
+
+### Sign In to GitHub in VS Code
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).  
+2. Type: `Sign in to GitHub`.  
+3. Follow the prompts to complete authentication.
+
+### Publish Branch to GitHub
+
+1. Click **Publish Branch** in the Source Control panel.  
+2. VS Code will open your new repository on GitHub in the browser.
+
+Your first repository is now live on GitHub.
+
+---
+
+## 2. Creating and Switching Branches
+
+Use branches to work on new features or bug fixes without affecting the main codebase.
+
+### Create a Branch
+
+1. Open the Command Palette.  
+2. Type and select: `Git: Create Branch`.  
+3. Enter a name for your branch (e.g., `feature-login`).  
+4. Press **Enter** — you will be switched to the new branch automatically.
+
+### Rename the Current Branch
+
+1. Open the Command Palette.  
+2. Type: `Git: Rename Branch`.  
+3. Enter the new name (e.g., `test-branch`).  
+4. Press **Enter**.
+
+### Switch Between Branches
+
+- Click the branch name in the bottom-left corner of VS Code.  
+- Select a branch from the list to switch.
+
+---
+
+## 3. Making Changes and Committing
+
+### Make a Change
+
+1. Open a file or create a new one.  
+2. Make edits and **save** the file.
+
+### Commit Your Changes
+
+1. Open the **Source Control** panel (`Ctrl+Shift+G`).  
+2. Stage your changes (click the `+` icon or "Stage All Changes").  
+3. Enter a clear commit message (e.g., `Add login validation logic`).  
+4. Click the checkmark (`✓`) to commit.
+
+Tip: Keep commit messages short and meaningful.
+
+### Check on GitHub
+
+Open your repository on GitHub and confirm that your commit is visible.
+
+---
+
+## 4. Pushing Changes to GitHub
+
+1. Open the **Source Control** panel.  
+2. Click the three-dot menu (`...`) in the top-right corner.  
+3. Select `Push`.
+
+VS Code may also prompt you to push after committing.
+
+---
+
+## 5. Merging a Branch into Main
+
+1. Stay on your feature branch (e.g., `test-branch`).  
+2. Open the **Source Control** view.  
+3. Click the three-dot menu (`...`).  
+4. Go to: `Branch` > `Merge Branch`.  
+5. Select the branch to merge into (usually `main`).
+
+### After Merging
+
+1. Switch to the `main` branch.  
+2. Use the Command Palette: `Git: Pull` to get the latest changes.
+
+---
+
+# ------------------------------------
+# Working With Others
+# ------------------------------------
+
+## 6. Cloning a Repository
+
+To contribute to an existing project, first clone the repository.
+
+### Steps
+
+1. Copy the repo URL from GitHub (HTTPS or SSH).  
+2. Open **VS Code**.  
+3. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).  
+4. Type and select: `Git: Clone`.  
+5. Paste the repo URL and choose a local folder.  
+6. Open the cloned folder when prompted.
+
+---
+
+## 7. Create a Branch (on the Cloned Repo)
+
+Follow the same steps from Section 2 to create your own branch for working on changes.
+
+---
+
+## 8. Make Changes & Commit
+
+Same as Section 3. Don’t forget to pull the latest changes from `main` before starting.
+
+---
+
+## 9. Push Changes
+
+Same as Section 4. Make sure you’re pushing to your own branch.
+
+---
+
+## 10. Creating a Pull Request
+
+Use a pull request (PR) to merge your branch into the main project.
+
+### Steps
+
+1. Install the **GitHub Pull Requests and Issues** extension (if not already installed).  
+2. Click the **GitHub icon** in the Activity Bar.  
+3. Click **Create Pull Request**.  
+4. Select your source and target branches (e.g., `feature-login` → `main`).  
+5. Add a title and description.  
+6. Click **Create**.
+
+---
+
+## 11. Merging a Pull Request
+
+After review and approval, your PR can be merged.
+
+### You can merge:
+
+- On the **GitHub website**, or  
+- From within VS Code using the extension
+
+### After Merging
+
+1. Switch to the `main` branch.  
+2. Pull the latest updates: `Git: Pull`.
+
+---
+
+## Summary of Common Git Commands
+
+| Task                   | Command Palette Entry           |
+|------------------------|----------------------------------|
+| Sign in to GitHub      | `Sign in to GitHub`              |
+| Clone Repository       | `Git: Clone`                     |
+| Create Branch          | `Git: Create Branch`             |
+| Switch Branch          | Bottom-left branch selector      |
+| Rename Branch          | `Git: Rename Branch`             |
+| Stage Changes          | Source Control Panel (`+`)       |
+| Commit Changes         | Source Control Panel (`✓`)       |
+| Push Changes           | `Git: Push`                      |
+| Pull Changes           | `Git: Pull`                      |
+| Merge Branch           | `Branch > Merge Branch`          |
+| Create Pull Request    | GitHub sidebar (extension)       |
+| Merge Pull Request     | GitHub (web or extension)        |
+
+---
+
+## Best Practices
+
+- Always pull the latest changes before starting new work.  
+- Use clear, consistent naming for branches and commits.  
+- Make small, focused pull requests.  
+- Push and open PRs early to collaborate.  
+- Regularly pull from `main` to avoid conflicts.
+
+---
+
+happy coding =)
