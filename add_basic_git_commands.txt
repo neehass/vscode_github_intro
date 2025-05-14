@@ -24,10 +24,10 @@ git reset <file>               Unstages a file from staging area
 git rm <file>                  Deletes a file and stages the removal
 git stash                      Temporarily shelves (stashes) changes
 git stash pop                  Applies the stashed changes back onto the working directory
-rm -rf my-repo-folder	       This will remove the entire project folder including all files and the Git history
-Remove-Item -Recurse -Force my-repo-folder
-rm -rf .git		       If you want to keep your files but remove Git tracking
-Remove-Item -Recurse -Force .git
+Linux: rm -rf my-repo-folder 	       This will remove the entire project folder including all files and the Git history
+powershell: Remove-Item -Recurse -Force my-repo-folder
+Linux: rm -rf .git		       If you want to keep your files but remove Git tracking
+powershell: Remove-Item -Recurse -Force .git
 gh repo delete username/repo-name --confirm 		Delete a Remote Repository
 
 ----------
