@@ -1,0 +1,55 @@
+Basic Git Commands for Terminal in VS Code
+Command                        Description
+--------------------------------------------------------------------------------
+git init                       Initializes a new Git repository in the current directory
+git remote add origin https://github.com/yourusername/your-repo.git 	Add a Remote Repository (only if not already linked)
+git rm --cached <file>         Keep the File in Your Folder but Remove from Git
+git push -u origin your-branch-name 		Push Your Branch
+git clone <url>                Clones a remote repository to your local machine
+git status                     Shows the status of changes (staged, unstaged, untracked)
+git add <file>                 Stages a specific file for commit
+git add .                      Stages all changes in the current directory
+git commit -m "message"        Commits staged changes with a message
+git log                        Shows the commit history
+git diff                       Shows changes between working directory and staged changes
+git branch                     Lists all branches
+git branch <branch-name>       Creates a new branch
+git checkout <branch-name>     Switches to a specific branch
+git checkout -b <branch-name>  Creates and switches to a new branch
+git merge <branch-name>        Merges a branch into the current branch
+git pull                       Fetches and merges changes from the remote repository
+git push                       Pushes committed changes to the remote repository
+git remote -v                  Lists the remote connections
+git reset <file>               Unstages a file from staging area
+git rm <file>                  Deletes a file and stages the removal
+git stash                      Temporarily shelves (stashes) changes
+git stash pop                  Applies the stashed changes back onto the working directory
+rm -rf my-repo-folder	       This will remove the entire project folder including all files and the Git history
+Remove-Item -Recurse -Force my-repo-folder
+rm -rf .git		       If you want to keep your files but remove Git tracking
+Remove-Item -Recurse -Force .git
+gh repo delete username/repo-name --confirm 		Delete a Remote Repository
+
+----------
+how to open a Project and Repository:
+
+Local Repository: Name = Folder Name
+---------------------------------------
+mkdir my-project
+cd my-project
+git init
+
+This creates a Git repo named 'my-project' (based on the folder name).
+
+Remote Repository: Set by Hosting Platform
+---------------------------------------------
+1. Create a repository on GitHub (e.g., 'awesome-app')
+2. Link it with your local repo:
+   git remote add origin https://github.com/yourusername/awesome-app.git
+
+Rename Local Folder (Changes Repo Name)
+------------------------------------------
+mv old-name new-name
+cd new-name
+Git will still work as long as the .git folder remains intact.
+
