@@ -3,7 +3,7 @@ for beginners, by a beginner
  
 * The `vscode_github_guide.txt` is an introduction for a Github workflow in VS Code
 * The `git-cheat-sheet-education.pdf` is a brief summary of most commen commands (created by GitHub)
-
+* The `add_basic_git_commands.txt` contains some more basic commands 
 ---
 
 ## useful links
