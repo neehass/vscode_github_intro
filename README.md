@@ -10,13 +10,14 @@ for beginners, by a beginner
 here is a small selection of useful links:
 
 Git:
-* https://git-scm.com/ 
+* https://git-scm.com/
+* Git Basic Commands Cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
+* Git Basic Commands Explenation: https://www.youtube.com/watch?v=rE2zRhZdjFU
 
 GitHub:
 * https://docs.github.com/
 * https://docs.github.com/en/get-started
 * https://docs.github.com/en/get-started/using-github/github-flow
-* Git Cheatsheet: https://education.github.com/git-cheat-sheet-education.pdf
 
 VS Code:
 * https://code.visualstudio.com/
